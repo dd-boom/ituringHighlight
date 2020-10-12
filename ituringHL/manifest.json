@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+	"name": "autoHighLight",
+	"version": "1.0.0",
+	"description": "旦旦的图灵电子书自动高亮插件1.0(arrayJY大佬的油猴与stylus插件降维版)",
+	"icons": { 
+		"16": "img/dd-16x16.png",             
+		"48": "img/dd-180x180.png",            
+		"128": "img/dd-180x180.png" 
+	},
+	"background": {
+		"scripts": ["js/bg.js"]
+	},
+	"content_scripts": [
+		{
+		  "matches": ["https://www.ituring.com.cn/book/tupubarticle/*"],
+		  "js": ["js/jquery.slim.min.js","js/addSubtitles.js"],
+		  "css":["css/ituring-code-highlight.css"]
+		}
+	  ]
+}
