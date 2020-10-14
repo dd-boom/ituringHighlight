@@ -47,7 +47,7 @@
     const side = $(".side");
     $(window).scroll( ()=>{
       if($(document).scrollTop() >= 200){
-        const sideHight = $(document).scrollTop() -90;
+        const sideHight = $(document).scrollTop()-100;
         side.css("top",sideHight + "px");
       }else{
         side.removeAttr("style");
